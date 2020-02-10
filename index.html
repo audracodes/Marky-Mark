@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <!-- Favicon -->
+    <!-- Load in CSS -->
+    <!-- Load in jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <!-- Load in JS -->
+    <script src="./script.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Marky-Mark</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Marky-Mark</h1>
+            <h2>The Mark Calculator</h2>
+        </div>
+    </header>
+    
+    <main>
+        <section>
+            <div>
+                <p>Instructions go here</p>
+            </div>
+
+            <div>
+                <!-- Calculator -->
+                <form action="submit">
+                    <!-- Field One -->
+                    <fieldset>
+                        <legend>Enter your first grade and grade weight</legend>
+
+                        <label for="gradeOne">Grade One:</label>
+                        <input type="text" name="gradeOne" id="gradeOne">
+
+                        <label for="weightOne">Weight One:</label>
+                        <input type="text" name="weightOne" id="weightOne">
+                    </fieldset>
+
+                    <!-- Field Two -->
+                    <fieldset>
+                        <legend>Enter your second grade and grade weight</legend>
+
+                        <label for="gradeTwo">Grade Two:</label>
+                        <input type="text" name="gradeTwo" id="gradeTwo">
+
+                        <label for="weightTwo">Weight Two:</label>
+                        <input type="text" name="weightTwo" id="weightTwo">
+                    </fieldset>
+
+                    <!-- Field Three -->
+                    <fieldset>
+                        <legend>Enter your third grade and grade weight</legend>
+                        
+                        <label for="gradeThree">Grade Three:</label>
+                        <input type="text" name="gradeThree" id="gradeThree">
+
+                        <label for="weightThree">Weight Three:</label>
+                        <input type="text" name="weightThree" id="weightThree">
+                    </fieldset>
+
+                    <button type="submit" value="Calculate">Calculate</button>
+                </form>
+
+                <!-- Results -->
+                <div>
+                    <h3>Your Mark:</h3>
+                    <p>Result goes here</p>
+                    <p>Refresh to use again</p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <h5>Gnarly Quinn Designs - 2020</h5>
+    </footer>
+    
+</body>
+</html>
