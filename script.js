@@ -7,8 +7,6 @@ $(function () {
 
         // Setting/Getting value from the inputs, changing it to a number
 
-        // Is the parseInt needed though?
-        //?  Is there a way to do multiple variables as they all have similar code?
         const gradeOne = parseInt($('#gradeOne').val());
         const gradeTwo = parseInt($('#gradeTwo').val());
         const gradeThree = parseInt($('#gradeThree').val());
@@ -17,22 +15,29 @@ $(function () {
         const weightTwo = parseInt($('#weightTwo').val());
         const weightThree = parseInt($('#weightThree').val());
 
-        // Math Time
-        // Made a function to reduce lines of code
+        // Checking to make sure that the weights add up to 100% before the code progresses 
 
-        //? Anyway to have the function fire on all three without writing it out to reduce code?
+        if (weightOne + weightTwo + weightThree === 100) {
 
-        const gradeAfterWeight = function(grade,weight) {
-            return((weight / 100) * grade);
+            // Turn weight into a decimal and then multiply by the grade
+            const gradeAfterWeight = function(grade,weight) {
+                return((weight / 100) * grade);
+            };
+            
+            const gradeWeightOne = gradeAfterWeight(gradeOne,weightOne);
+            const gradeWeightTwo = gradeAfterWeight(gradeTwo,weightTwo);
+            const gradeWeightThree = gradeAfterWeight(gradeThree,weightThree);
+    
+            // Add the multiplied grades to get the final overall mark
+            // ? When there's only one input, even if it equals 100%, Marky-Mark is still mad. 
+            const overallMark = gradeWeightOne + gradeWeightTwo + gradeWeightThree;
+    
+            $('.results').text(`${overallMark}%`);
+            
+        } else {
+            // Alert user that their weight doesn't equal 100% 
+            alert('Please check your weights, they need to add up to 100%');
         };
-
-        const gradeWeightOne = gradeAfterWeight(gradeOne,weightOne);
-        const gradeWeightTwo = gradeAfterWeight(gradeTwo,weightTwo);
-        const gradeWeightThree = gradeAfterWeight(gradeThree,weightThree);
-
-        const overallMark = gradeWeightOne + gradeWeightTwo + gradeWeightThree;
-
-        console.log(overallMark);
 
     });    
 });
