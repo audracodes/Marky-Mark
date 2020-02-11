@@ -2,21 +2,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- ? Order of things in our head -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Google Fonts -->
-    <!-- Favicon -->
-    <!-- Load in CSS -->
+    
+    <link rel="stylesheet" href="./styles/style.css">
     <!-- Load in jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <!-- Load in JS -->
     <script src="./script.js"></script>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type="image/png" href="./assets/favicon.ico" rel="icon">
     <title>Marky-Mark</title>
 </head>
 <body>
     <header>
-        <div>
+        <div class="wrapper">
             <h1>Marky-Mark</h1>
             <h2>The Mark Calculator</h2>
         </div>
@@ -24,11 +26,11 @@
     
     <main>
         <section>
-            <div>
+            <div class="wrapper">
                 <p>Instructions go here</p>
             </div>
 
-            <div>
+            <div class="wrapper">
                 <!-- Calculator -->
                 <form action="submit">
                     <!-- Field One -->
@@ -79,7 +81,9 @@
     </main>
 
     <footer>
-        <h5>Gnarly Quinn Designs - 2020</h5>
+        <div class="wrapper">
+            <h5>Gnarly Quinn Designs - 2020</h5>
+        </div>
     </footer>
     
 </body>
