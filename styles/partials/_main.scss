@@ -1,0 +1,12 @@
+//! Check on proper CSS ;
+// Form
+
+form {
+    background: $formColour;
+}
+
+fieldset {
+    border: 5px $accentColour dotted;
+    margin-top: 3%;
+}
+

@@ -17,7 +17,9 @@ $(function () {
 
         // Checking to make sure that the weights add up to 100% before the code progresses 
 
-        if (weightOne + weightTwo + weightThree === 100) {
+        console.log(weightThree);
+
+        if (weightOne + weightTwo + weightThree === 100 ) {
 
             // Turn weight into a decimal and then multiply by the grade
             const gradeAfterWeight = function(grade,weight) {
@@ -29,7 +31,6 @@ $(function () {
             const gradeWeightThree = gradeAfterWeight(gradeThree,weightThree);
     
             // Add the multiplied grades to get the final overall mark
-            // ? When there's only one input, even if it equals 100%, Marky-Mark is still mad. 
             const overallMark = gradeWeightOne + gradeWeightTwo + gradeWeightThree;
     
             $('.results').text(`${overallMark}%`);

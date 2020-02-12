@@ -1,5 +1,15 @@
+// General Font/Sizes
+
+body {
+    color: $fontColour;
+    background: $backgroundColour;
+}
+
+
 .wrapper {
     max-width: 1280px;
     width: 80%;
-    margin: 0 auto; 
+    margin: 0 auto;
+    text-align: center;
 }
+
