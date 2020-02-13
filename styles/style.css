@@ -182,6 +182,8 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 body {
   color: #1D1E18;
   background: #d8d8d8;
+  height: 100vh;
+  position: relative;
 }
 
 .wrapper {
@@ -191,22 +193,13 @@ body {
   text-align: center;
 }
 
-footer {
-  background: #6e7271;
-  margin-bottom: 0;
-}
-
-h5 {
-  margin-bottom: 0;
-  font-size: 13px;
-}
-
 h1 {
   color: #1D1E18;
   font-family: "Nanum Gothic", sans-serif;
   font-size: 4rem;
   letter-spacing: 4px;
   margin: 1%;
+  margin-top: 0;
   text-decoration: underline;
   -webkit-text-decoration-color: #9ac2c9;
           text-decoration-color: #9ac2c9;
@@ -218,7 +211,16 @@ h2 {
 }
 
 footer {
-  margin-top: 4.1%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #6e7271;
+  margin-bottom: 0;
+}
+
+h5 {
+  margin: 3px;
+  font-size: 11px;
 }
 
 h4 {
@@ -264,11 +266,20 @@ fieldset {
 
 input {
   width: 10%;
+  min-width: 50px;
+}
+
+h3 {
+  margin: 10px;
+}
+
+.percentSymbol {
+  margin-right: 50px;
 }
 
 button {
   border: 0;
-  margin: 20px;
+  margin: 15px;
   padding: 10px 15px;
   -webkit-box-shadow: 5px 5px;
           box-shadow: 5px 5px;
@@ -283,4 +294,9 @@ button:hover {
 .calculator {
   background: #6e7271;
   border: 5px #9ac2c9 solid;
+}
+
+.results {
+  font-size: 2rem;
+  margin: 15px;
 }

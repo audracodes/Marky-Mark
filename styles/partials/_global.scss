@@ -3,6 +3,8 @@
 body {
     color: $fontColour;
     background: $backgroundColour;
+    height: 100vh;
+    position: relative;
 }
 
 
@@ -14,13 +16,4 @@ body {
     text-align: center;
 }
 
-// Footer
-footer {
-    background: $formColour;
-    margin-bottom: 0;
-}
 
-h5 {
-    margin-bottom: 0;
-    font-size: 13px;
-}

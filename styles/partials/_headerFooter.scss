@@ -5,7 +5,8 @@ h1 {
     font-family: $headingFont;
     font-size: 4rem;
     letter-spacing: 4px;
-    margin: 1%; 
+    margin: 1%;
+    margin-top: 0; 
     text-decoration: underline;
     text-decoration-color: $accentColour;
 }
@@ -17,5 +18,14 @@ h2 {
 
 // Footer
 footer {
-    margin-top: 4.1%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: $formColour;
+    margin-bottom: 0;
+}
+
+h5 {
+    margin: 3px;
+    font-size: 11px;
 }

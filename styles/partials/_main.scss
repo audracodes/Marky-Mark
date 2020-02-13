@@ -35,7 +35,7 @@ h4 {
     list-style-type: decimal;
 }
 
-// Form
+// Calculator
 fieldset {
     border: 5px $accentColour dotted;
     margin-top: 2%;
@@ -44,15 +44,20 @@ fieldset {
 
 input {
     width: 10%;
-    // * check on this 
+    min-width: 50px;
+}
+
+
+.percentSymbol {
+    margin-right: 50px;
 }
 
 button {
     border: 0;
-    margin: 20px;
+    margin: 15px;
     padding: 10px 15px;
     box-shadow: 5px 5px;
-
+    
     &:hover {
         background: $accentColour;
         box-shadow: 3px 3px;
@@ -63,5 +68,16 @@ button {
     border: 5px $accentColour solid;
 }
 
+
+// Results
+
+h3 {
+    margin: 10px;
+    text-decoration-style: 
+}
+.results {
+    font-size: 2rem; 
+    margin: 15px;
+}
 
 
