@@ -1,12 +1,67 @@
-//! Check on proper CSS ;
-// Form
 
-form {
-    background: $formColour;
+// Instructions/Notes Section
+
+h4 {
+    margin: 10px;
 }
 
+.instructions,
+.notes {
+    text-align: left; 
+    
+}
+
+.instructionsNotes {
+    display: flex;
+}
+
+.instructionsDiv,
+.notesDiv {
+    width: 48%;
+    border: 5px $accentColour solid;
+    margin-bottom: 10px;
+
+    ul {
+        margin-top: 5px;
+    }
+}
+
+.instructionsDiv {
+    margin-right: 4%;
+    padding-right: 5px;
+}
+
+.instructions li {
+    list-style-type: decimal;
+}
+
+// Form
 fieldset {
     border: 5px $accentColour dotted;
-    margin-top: 3%;
+    margin-top: 2%;
+    //* width: 70%;
 }
+
+input {
+    width: 10%;
+    // * check on this 
+}
+
+button {
+    border: 0;
+    margin: 20px;
+    padding: 10px 15px;
+    box-shadow: 5px 5px;
+
+    &:hover {
+        background: $accentColour;
+        box-shadow: 3px 3px;
+    }
+}
+.calculator {
+    background: $formColour;
+    border: 5px $accentColour solid;
+}
+
+
 

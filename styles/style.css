@@ -180,22 +180,107 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 body {
-  color: #1d1e18;
+  color: #1D1E18;
   background: #d8d8d8;
 }
 
 .wrapper {
-  max-width: 1280px;
+  max-width: 1000px;
   width: 80%;
   margin: 0 auto;
   text-align: center;
 }
 
-form {
+footer {
   background: #6e7271;
+  margin-bottom: 0;
+}
+
+h5 {
+  margin-bottom: 0;
+  font-size: 13px;
+}
+
+h1 {
+  color: #1D1E18;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 4rem;
+  letter-spacing: 4px;
+  margin: 1%;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #9ac2c9;
+          text-decoration-color: #9ac2c9;
+}
+
+h2 {
+  font-family: "Raleway", sans-serif;
+  margin: 0 0 10px 0;
+}
+
+footer {
+  margin-top: 4.1%;
+}
+
+h4 {
+  margin: 10px;
+}
+
+.instructions,
+.notes {
+  text-align: left;
+}
+
+.instructionsNotes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.instructionsDiv,
+.notesDiv {
+  width: 48%;
+  border: 5px #9ac2c9 solid;
+  margin-bottom: 10px;
+}
+
+.instructionsDiv ul,
+.notesDiv ul {
+  margin-top: 5px;
+}
+
+.instructionsDiv {
+  margin-right: 4%;
+  padding-right: 5px;
+}
+
+.instructions li {
+  list-style-type: decimal;
 }
 
 fieldset {
-  border: 5px #9ac2C9 dotted;
-  margin-top: 3%;
+  border: 5px #9ac2c9 dotted;
+  margin-top: 2%;
+}
+
+input {
+  width: 10%;
+}
+
+button {
+  border: 0;
+  margin: 20px;
+  padding: 10px 15px;
+  -webkit-box-shadow: 5px 5px;
+          box-shadow: 5px 5px;
+}
+
+button:hover {
+  background: #9ac2c9;
+  -webkit-box-shadow: 3px 3px;
+          box-shadow: 3px 3px;
+}
+
+.calculator {
+  background: #6e7271;
+  border: 5px #9ac2c9 solid;
 }

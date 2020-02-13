@@ -6,43 +6,56 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Google Fonts -->
-    
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Raleway&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./styles/style.css">
-    <!-- Load in jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <!-- Load in JS -->
     <script src="./script.js"></script>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link type="image/png" href="./assets/favicon.ico" rel="icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Marky-Mark</title>
 </head>
 <body>
     <header>
         <div class="wrapper">
-            <h1>Marky-Mark</h1>
-            <h2>The Mark Calculator</h2>
+            <h1>Marky - Mark</h1><h2>A Mark Calculator</h2>
         </div>
     </header>
     
     <main>
         <section>
-            <div class="wrapper">
-                <p>Instructions go here</p>
+            <div class="wrapper instructionsNotes">
+                <div class="instructionsDiv">
+                    <h4>Instructions</h4>
+                    <ul class="instructions">
+                        <li>Enter your grades into the grade fields</li>
+                        <li>Enter the amount the grades are worth into the weight fields.</li>
+                        <li>Click calculate and let Marky-Mark find your overall mark!</li>
+                    </ul>
+                </div>
+
+                <div class="notesDiv">
+                    <h4>Notes:</h4>
+                    <ul class="notes">
+                        <li>The weights need to add up to 100%.</li>
+                        <li>No need to add a percent symbol (%) as Marky-Mark does that for you!</li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="wrapper">
+            <div class="wrapper borderForm">
                 <!-- Calculator -->
-                <form action="submit">
+                <form action="submit" class="calculator">
                     <!-- Field One -->
                     <fieldset>
                         <legend>Enter your first grade and grade weight</legend>
 
                         <label for="gradeOne">Grade One:</label>
                         <input type="number" name="gradeOne" id="gradeOne" value="0">
+                        <label for="gradeOne">%</label>
 
                         <label for="weightOne">Weight One:</label>
                         <input type="number" name="weightOne" id="weightOne" value="0" required>
+                        <label for="weightOne">%</label>
                     </fieldset>
 
                     <!-- Field Two -->
@@ -51,9 +64,11 @@
 
                         <label for="gradeTwo">Grade Two:</label>
                         <input type="number" name="gradeTwo" id="gradeTwo" value="0">
+                        <label for="gradeTwo">%</label>
 
                         <label for="weightTwo">Weight Two:</label>
                         <input type="number" name="weightTwo" id="weightTwo" value="0" required>
+                        <label for="weightTwo">%</label>
                     </fieldset>
 
                     <!-- Field Three -->
@@ -62,19 +77,20 @@
                         
                         <label for="gradeThree">Grade Three:</label>
                         <input type="number" name="gradeThree" id="gradeThree" value="0">
+                        <label for="gradeThree">%</label>
 
                         <label for="weightThree">Weight Three:</label>
                         <input type="number" name="weightThree" id="weightThree" value="0" required>
+                        <label for="weightThree">%</label>
                     </fieldset>
 
                     <button type="submit" value="Calculate">Calculate</button>
                 </form>
 
                 <!-- Results -->
-                <div>
+                <div class="calculator">
                     <h3>Your Mark:</h3>
-                    <p class='results'>Result goes here</p>
-                    <p>Refresh to use again</p>
+                    <p class='results'></p>
                 </div>
             </div>
 
