@@ -17,8 +17,6 @@ $(function () {
 
         // Checking to make sure that the weights add up to 100% before the code progresses 
 
-        console.log(weightThree);
-
         if (weightOne + weightTwo + weightThree === 100) {
 
             // Turn weight into a decimal and then multiply by the grade
