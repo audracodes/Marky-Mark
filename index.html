@@ -11,6 +11,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="./script.js"></script>
     <link type="image/png" href="./assets/favicon.ico" rel="icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Marky-Mark</title>
 </head>
@@ -49,39 +50,51 @@
                     <fieldset>
                         <legend>Enter your first grade and grade weight</legend>
 
-                        <label for="gradeOne">Grade One:</label>
-                        <input type="number" name="gradeOne" id="gradeOne" value="0">
-                        <label for="gradeOne"class='percentSymbol'>%</label>
+                        <div class="field grade">
+                            <label for="gradeOne">Grade One:</label>
+                            <input type="number" name="gradeOne" id="gradeOne" value="0">
+                            <label for="gradeOne"class='percentSymbol'>%</label>
+                        </div>
 
-                        <label for="weightOne">Weight One:</label>
-                        <input type="number" name="weightOne" id="weightOne" value="0" required>
-                        <label for="weightOne">%</label>
+                        <div class="field">
+                            <label for="weightOne">Weight One:</label>
+                            <input type="number" name="weightOne" id="weightOne" value="0" required>
+                            <label for="weightOne">%</label>
+                        </div>
                     </fieldset>
 
                     <!-- Field Two -->
                     <fieldset>
                         <legend>Enter your second grade and grade weight</legend>
 
-                        <label for="gradeTwo">Grade Two:</label>
-                        <input type="number" name="gradeTwo" id="gradeTwo" value="0">
-                        <label for="gradeTwo" class="percentSymbol">%</label>
+                        <div class="field grade">
+                            <label for="gradeTwo">Grade Two:</label>
+                            <input type="number" name="gradeTwo" id="gradeTwo" value="0">
+                            <label for="gradeTwo" class="percentSymbol">%</label>
+                        </div>
 
-                        <label for="weightTwo">Weight Two:</label>
-                        <input type="number" name="weightTwo" id="weightTwo" value="0" required>
-                        <label for="weightTwo">%</label>
+                        <div class="field">
+                            <label for="weightTwo">Weight Two:</label>
+                            <input type="number" name="weightTwo" id="weightTwo" value="0" required>
+                            <label for="weightTwo">%</label>
+                        </div>
                     </fieldset>
 
                     <!-- Field Three -->
                     <fieldset>
                         <legend>Enter your third grade and grade weight</legend>
                         
-                        <label for="gradeThree">Grade Three:</label>
-                        <input type="number" name="gradeThree" id="gradeThree" value="0">
-                        <label for="gradeThree" class="percentSymbol">%</label>
+                        <div class="field grade">
+                            <label for="gradeThree">Grade Three:</label>
+                            <input type="number" name="gradeThree" id="gradeThree" value="0">
+                            <label for="gradeThree" class="percentSymbol">%</label>
+                        </div>
 
-                        <label for="weightThree">Weight Three:</label>
-                        <input type="number" name="weightThree" id="weightThree" value="0" required>
-                        <label for="weightThree">%</label>
+                        <div class="field">
+                            <label for="weightThree">Weight Three:</label>
+                            <input type="number" name="weightThree" id="weightThree" value="0" required>
+                            <label for="weightThree">%</label>
+                        </div>
                     </fieldset>
 
                     <button type="submit" value="Calculate">Calculate</button>

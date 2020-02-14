@@ -1,0 +1,60 @@
+
+@media (max-width: 690px) {
+    // Header 
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    // Instructions/Notes Section
+    .instructionsNotes {
+        display: block;
+    }
+
+    .instructionsDiv,
+    .notesDiv {
+        width: 100%;
+    }
+
+    // Calculator
+    h3 {
+        font-size: 1rem;
+    }
+
+    // Results
+    .results {
+        font-size: 1.5rem;
+        margin: 10px;
+    }
+    
+}
+
+@media (max-width: 550px) {
+    // Header
+    h1 {
+        font-size: 3rem;
+    }
+
+    // Fieldsets
+    .field {
+        display: block;
+    }
+
+    .grade {
+        margin: 0 0 3% 7.5%;
+    }
+
+}
+
+@media (max-width: 470px) {
+    // Header
+    h1 {
+        font-size: 200%;
+    }
+}
+
+@media (max-width: 340px) {
+    // Header 
+    h1 {
+        font-size: 175%;
+    }
+}

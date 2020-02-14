@@ -180,10 +180,11 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 body {
-  color: #1D1E18;
+  color: #f6f7f8;
   background: #d8d8d8;
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
+  padding-bottom: 30px;
 }
 
 .wrapper {
@@ -208,6 +209,7 @@ h1 {
 h2 {
   font-family: "Raleway", sans-serif;
   margin: 0 0 10px 0;
+  color: #1D1E18;
 }
 
 footer {
@@ -243,6 +245,7 @@ h4 {
   width: 48%;
   border: 5px #9ac2c9 solid;
   margin-bottom: 10px;
+  color: #1D1E18;
 }
 
 .instructionsDiv ul,
@@ -259,6 +262,11 @@ h4 {
   list-style-type: decimal;
 }
 
+.calculator {
+  background: #6e7271;
+  border: 5px #9ac2c9 solid;
+}
+
 fieldset {
   border: 5px #9ac2c9 dotted;
   margin-top: 2%;
@@ -269,8 +277,21 @@ input {
   min-width: 50px;
 }
 
+input:after {
+  content: '%';
+  font-size: 30px;
+}
+
+legend {
+  padding-bottom: 5px;
+}
+
 .percentSymbol {
-  margin-right: 50px;
+  margin-right: 7%;
+}
+
+.field {
+  display: inline;
 }
 
 button {
@@ -287,11 +308,6 @@ button:hover {
           box-shadow: 3px 3px;
 }
 
-.calculator {
-  background: #6e7271;
-  border: 5px #9ac2c9 solid;
-}
-
 h3 {
   margin: 10px;
 }
@@ -299,4 +315,49 @@ h3 {
 .results {
   font-size: 2rem;
   margin: 20px;
+  color: #f6f7f8;
+}
+
+@media (max-width: 690px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+  .instructionsNotes {
+    display: block;
+  }
+  .instructionsDiv,
+  .notesDiv {
+    width: 100%;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  .results {
+    font-size: 1.5rem;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 550px) {
+  h1 {
+    font-size: 3rem;
+  }
+  .field {
+    display: block;
+  }
+  .grade {
+    margin: 0 0 3% 7.5%;
+  }
+}
+
+@media (max-width: 470px) {
+  h1 {
+    font-size: 200%;
+  }
+}
+
+@media (max-width: 340px) {
+  h1 {
+    font-size: 175%;
+  }
 }

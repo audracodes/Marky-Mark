@@ -20,6 +20,7 @@ h4 {
     width: 48%;
     border: 5px $accentColour solid;
     margin-bottom: 10px;
+    color: $fontColourTwo;
 
     ul {
         margin-top: 5px;
@@ -35,22 +36,43 @@ h4 {
     list-style-type: decimal;
 }
 
+
 // Calculator
+
+.calculator {
+    background: $formColour;
+    border: 5px $accentColour solid;
+}
+// Fieldsets
+
 fieldset {
     border: 5px $accentColour dotted;
     margin-top: 2%;
-    //* width: 70%;
 }
 
 input {
     width: 10%;
     min-width: 50px;
+
+    &:after {
+        content: '%';
+        font-size: 30px;
+    }
 }
 
+legend {
+    padding-bottom: 5px;
+}
 
 .percentSymbol {
-    margin-right: 50px;
+    margin-right: 7%;
 }
+
+.field {
+    display: inline;
+}
+
+// Button
 
 button {
     border: 0;
@@ -63,21 +85,17 @@ button {
         box-shadow: 3px 3px;
     }
 }
-.calculator {
-    background: $formColour;
-    border: 5px $accentColour solid;
-}
-
 
 // Results
 
 h3 {
     margin: 10px;
-    // text-decoration-style: 
 }
 .results {
     font-size: 2rem; 
     margin: 20px;
+    color: $fontColour;
 }
+
 
 

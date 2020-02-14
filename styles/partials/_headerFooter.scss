@@ -1,7 +1,7 @@
 
 // Heading
 h1 {
-    color: $fontColour;
+    color: $fontColourTwo;
     font-family: $headingFont;
     font-size: 4rem;
     letter-spacing: 4px;
@@ -14,6 +14,7 @@ h1 {
 h2 {
     font-family: $bodyFont;
     margin: 0 0 10px 0;
+    color: $fontColourTwo;
 }
 
 // Footer

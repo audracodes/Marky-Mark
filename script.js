@@ -33,7 +33,7 @@ $(function () {
             // Add the multiplied grades to get the final overall mark
             const overallMark = gradeWeightOne + gradeWeightTwo + gradeWeightThree;
     
-            $('.results').text(`${overallMark.toFixed(2)}%`);
+            $('.results').text(`${overallMark.toFixed(2)}%`).addClass('animated pulse');
             
         } else {
             // Alert user that their weight doesn't equal 100% 
