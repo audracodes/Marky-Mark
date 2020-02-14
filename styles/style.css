@@ -308,6 +308,10 @@ button:hover {
           box-shadow: 3px 3px;
 }
 
+button:focus {
+  background: #9ac2c9;
+}
+
 h3 {
   margin: 10px;
 }

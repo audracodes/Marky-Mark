@@ -1,7 +1,7 @@
 
 $(function () {
 
-    $('button').on('click', function(event) {
+    $('form').on('submit', function(event) {
         // Preventing the refresh behaviour
         event.preventDefault();
 
@@ -19,7 +19,7 @@ $(function () {
 
         console.log(weightThree);
 
-        if (weightOne + weightTwo + weightThree === 100 ) {
+        if (weightOne + weightTwo + weightThree === 100) {
 
             // Turn weight into a decimal and then multiply by the grade
             const gradeAfterWeight = function(grade,weight) {

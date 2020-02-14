@@ -84,6 +84,10 @@ button {
         background: $accentColour;
         box-shadow: 3px 3px;
     }
+
+    &:focus {
+        background: $accentColour;
+    }
 }
 
 // Results
