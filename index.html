@@ -2,16 +2,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- ? Order of things in our head -->
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Raleway&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="./styles/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="./script.js"></script>
     <link type="image/png" href="./assets/favicon.ico" rel="icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Marky-Mark</title>
 </head>
@@ -33,7 +30,7 @@
                         <li>Click calculate and let Marky-Mark find your overall mark!</li>
                     </ul>
                 </div>
-
+                
                 <div class="notesDiv">
                     <h4>Notes:</h4>
                     <ul class="notes">
@@ -42,44 +39,44 @@
                     </ul>
                 </div>
             </div>
-
+            
             <div class="wrapper borderForm">
                 <!-- Calculator -->
                 <form action="submit" class="calculator">
                     <!-- Field One -->
                     <fieldset>
                         <legend>Enter your first grade and grade weight</legend>
-
+                        
                         <div class="field grade">
                             <label for="gradeOne">Grade One:</label>
                             <input type="number" name="gradeOne" id="gradeOne" value="0" min="0" required>
                             <label for="gradeOne"class='percentSymbol'>%</label>
                         </div>
-
+                        
                         <div class="field">
                             <label for="weightOne">Weight One:</label>
                             <input type="number" name="weightOne" id="weightOne" value="0" required min="0">
                             <label for="weightOne">%</label>
                         </div>
                     </fieldset>
-
+                    
                     <!-- Field Two -->
                     <fieldset>
                         <legend>Enter your second grade and grade weight</legend>
-
+                        
                         <div class="field grade">
                             <label for="gradeTwo">Grade Two:</label>
                             <input type="number" name="gradeTwo" id="gradeTwo" value="0" min="0" required>
                             <label for="gradeTwo" class="percentSymbol">%</label>
                         </div>
-
+                        
                         <div class="field">
                             <label for="weightTwo">Weight Two:</label>
                             <input type="number" name="weightTwo" id="weightTwo" value="0" required min="0">
                             <label for="weightTwo">%</label>
                         </div>
                     </fieldset>
-
+                    
                     <!-- Field Three -->
                     <fieldset>
                         <legend>Enter your third grade and grade weight</legend>
@@ -89,32 +86,33 @@
                             <input type="number" name="gradeThree" id="gradeThree" value="0" min="0" required>
                             <label for="gradeThree" class="percentSymbol">%</label>
                         </div>
-
+                        
                         <div class="field">
                             <label for="weightThree">Weight Three:</label>
                             <input type="number" name="weightThree" id="weightThree" value="0" required min="0">
                             <label for="weightThree">%</label>
                         </div>
                     </fieldset>
-
+                    
                     <button type="submit" value="Calculate">Calculate</button>
                 </form>
-
+                
                 <!-- Results -->
                 <div class="calculator">
                     <h3>Your Mark:</h3>
                     <p class='results'>%</p>
                 </div>
             </div>
-
+            
         </section>
     </main>
-
+    
     <footer>
         <div class="wrapper">
             <h5>Gnarly Quinn Designs - 2020</h5>
         </div>
     </footer>
-    
+
+    <script src="./script.js"></script>
 </body>
 </html>
